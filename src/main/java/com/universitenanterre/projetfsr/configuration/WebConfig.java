@@ -1,4 +1,4 @@
-package com.universitenanterre.projetfsr;
+package com.universitenanterre.projetfsr.configuration;
 
 import org.springframework.stereotype.Component;
 

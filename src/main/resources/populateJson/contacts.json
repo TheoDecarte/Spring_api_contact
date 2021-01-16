@@ -1,0 +1,126 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Mathew",
+    "email": "John.Mathew@xyz.com",
+    "address": {
+      "city": "Strasbourg",
+      "country": "France",
+      "zip": "67000",
+      "street": "5 Avenue des Vosges"
+    },
+    "phoneNumbers": [
+      {
+        "phoneKind": "Home",
+        "phoneNumber": "0123456789"
+      },
+      {
+        "phoneKind": "Work",
+        "phoneNumber": "4588455895"
+      }
+    ],
+    "contactGroups": [
+      {
+        "id": 1,
+        "groupName": "Work",
+        "groupDescription": "sdfsdf"
+      },
+      {
+        "id": 2,
+        "groupName": "Work",
+        "groupDescription": "sdfsdf"
+      }
+    ]
+  },
+  {
+    "firstname": "Jim",
+    "lastname": "Parker",
+    "email": "Jim.Parker@xyz.com",
+    "address": {
+      "city": "Paris",
+      "country": "France",
+      "zip": "75001",
+      "street": "14 Place André-Malraux"
+    },
+    "phoneNumbers": [
+      {
+        "phoneKind": "Work",
+        "phoneNumber": "1256398472"
+      }
+    ],
+    "contactGroups": [
+      {
+        "id": 2,
+        "groupName": "Home",
+        "groupDescription": "sdfsdf"
+      }
+    ]
+  },
+  {
+    "firstname": "Sophia",
+    "lastname": "Ran",
+    "email": "Sophia.Ran@xyz.com",
+    "address": {
+      "city": "New York",
+      "country": "United States",
+      "zip": "90050",
+      "street": "586 Cortlandt Street"
+    },
+    "phoneNumbers": [
+      {
+        "phoneKind": "Family",
+        "phoneNumber": "895874563"
+      }
+    ],
+    "contactGroups": [
+      {
+        "id": 3
+      }
+    ]
+  }
+,
+  {
+    "firstname": "Wendi",
+    "lastname": "Blake",
+    "email": "Wendi.Blake@xyz.com",
+    "address": {
+      "city": "Bordeaux",
+      "country": "France",
+      "zip": "33000",
+      "street": "58 Rue de Blabla"
+    },
+    "phoneNumbers": [
+      {
+        "phoneKind": "Family",
+        "phoneNumber": "078465869"
+      }
+    ],
+    "contactGroups": [
+      {
+        "id": 1
+      }
+    ]
+  },
+  {
+    "firstname": "Raouf",
+    "lastname": "Haroun",
+    "email": "raouf.haroun@xyz.com",
+    "address": {
+      "city": "Mantes-la-Jolie",
+      "country": "France",
+      "zip": "96850",
+      "street": "14 Rue de Lolfod"
+    },
+    "phoneNumbers": [
+      {
+        "phoneKind": "Family",
+        "phoneNumber": "068547856"
+      }
+    ],
+    "contactGroups": [
+      {
+        "id": 1
+      }
+    ]
+  }
+]

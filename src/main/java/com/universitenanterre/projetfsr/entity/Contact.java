@@ -14,9 +14,11 @@ import java.util.Set;
 
 @AllArgsConstructor
 @Entity(name = "CONTACT")
-@JsonIdentityInfo(
-        generator = ObjectIdGenerators.PropertyGenerator.class,
-        property = "id")
+@NamedQueries({
+        @NamedQuery(name="Contact.findAll", query="SELECT c FROM CONTACT c")
+})
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id", scope = Contact.class)
 @Data
 @NoArgsConstructor
 @Builder

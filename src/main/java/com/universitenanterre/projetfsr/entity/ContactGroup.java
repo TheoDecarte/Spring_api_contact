@@ -1,8 +1,6 @@
 package com.universitenanterre.projetfsr.entity;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,9 +11,9 @@ import java.util.List;
 
 @AllArgsConstructor
 @Entity(name = "CONTACT_GROUP")
-@JsonIdentityInfo(
-        generator = ObjectIdGenerators.PropertyGenerator.class,
-        property = "id")
+@NamedQueries({
+        @NamedQuery(name="ContactGroup.findAll", query="SELECT cg FROM CONTACT_GROUP cg")
+})
 @Data
 @NoArgsConstructor
 public class ContactGroup implements Serializable {

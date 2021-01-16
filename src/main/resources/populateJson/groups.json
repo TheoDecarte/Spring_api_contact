@@ -1,0 +1,14 @@
+[
+  {
+    "groupName": "Work",
+    "groupDescription": "Work Group"
+  },
+  {
+    "groupName": "Family",
+    "groupDescription": "Family Group"
+  },
+  {
+    "groupName": "Home",
+    "groupDescription": "Home Group"
+  }
+]
