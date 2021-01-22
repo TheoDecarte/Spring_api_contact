@@ -18,6 +18,20 @@
    <context:component-scan base-package="com.lip6.services.*" />
     <context:annotation-config/> -->
 
-<bean id="contactService" class="com.universitenanterre.projetfsr.service.ContactService"/>
+    <bean id="contactDAO" class="com.universitenanterre.projetfsr.dao.contact.ContactDAOProxy"/>
+    <bean id="groupDAO" class="com.universitenanterre.projetfsr.dao.group.GroupDAOProxy"/>
+    <bean id="numberDAO" class="com.universitenanterre.projetfsr.dao.number.NumberDAOProxy"/>
+
+    <bean id="contactService" class="com.universitenanterre.projetfsr.service.ContactService">
+        <constructor-arg ref="contactDAO" />
+    </bean>
+
+    <bean id="groupService" class="com.universitenanterre.projetfsr.service.GroupService">
+        <constructor-arg ref="groupDAO" />
+    </bean>
+
+    <bean id="numberService" class="com.universitenanterre.projetfsr.service.NumberService">
+        <constructor-arg ref="numberDAO" />
+    </bean>
 
 </beans>

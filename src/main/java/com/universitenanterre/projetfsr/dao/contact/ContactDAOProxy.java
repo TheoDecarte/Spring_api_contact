@@ -1,7 +1,7 @@
 package com.universitenanterre.projetfsr.dao.contact;
 
 import com.universitenanterre.projetfsr.entity.Contact;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -9,10 +9,10 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
-@RequiredArgsConstructor
 public class ContactDAOProxy implements ContactDAO{
 
-    private final EntityManager em;
+    @Autowired
+    private EntityManager em;
 
     @Override
     public List<Contact> findAll(){

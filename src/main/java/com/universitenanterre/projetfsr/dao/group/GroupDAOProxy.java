@@ -2,6 +2,7 @@ package com.universitenanterre.projetfsr.dao.group;
 
 import com.universitenanterre.projetfsr.entity.ContactGroup;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -12,7 +13,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class GroupDAOProxy implements GroupDAO{
 
-    private final EntityManager em;
+    @Autowired
+    private EntityManager em;
 
 
     @Transactional

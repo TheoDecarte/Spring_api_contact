@@ -2,6 +2,7 @@ package com.universitenanterre.projetfsr.dao.number;
 
 import com.universitenanterre.projetfsr.entity.PhoneNumber;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -11,7 +12,8 @@ import javax.transaction.Transactional;
 @RequiredArgsConstructor
 public class NumberDAOProxy implements NumberDAO {
 
-    private final EntityManager em;
+    @Autowired
+    private EntityManager em;
 
     @Transactional
     @Override
